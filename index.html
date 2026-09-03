@@ -10,13 +10,92 @@
             width: 100%; height: 100%; min-height: 100vh;
             background: linear-gradient(rgba(109, 109, 109, 0.4), rgba(45, 45, 45, 0.4));
             background-size: cover; background-color: #000;
-            color: #fff; font-family: 'Calibri', sans-serif;
-            overflow: hidden; display: flex; flex-direction: column;
+            color: #fff; font-family: 'Verdana', sans-serif;
+            overflow-x: hidden; display: flex; flex-direction: column;
         }
+
+        .timeline {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: rgba(80, 79, 79, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            border: 1px solid rgba(68, 68, 68, 0.08);
+            box-shadow: 0 0 20px rgba(74, 74, 74, 0.2);
+            opacity: 1;
+        }
+
+        .card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .card img {
+            width: 260px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            color: #63b3ed;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            font-size: 20pt;
+        }
+
+        .info p {
+            line-height: 1.6;
+            color: #dddddd;
+            letter-spacing: 1px;
+            font-size: 14pt;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1 style = "color: white; text-align: center; margin-top: 50px; font-size: 48px">Tyler Molina's Portfolio</h1>
+    <h1 style = "color: white; text-align: center; margin-top: 50px; font-size: 48px; margin-bottom:75px">Iodinemacer's Portfolio</h1>
+
+    <div class="timeline">
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=5" alt="Engineering Builds">
+            <div class="info">
+                <h2>Engineering Builds</h2>
+                <p>Projects that followed the full engineering process, from computer design to physical construction.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=2" alt="Coding Projects">
+            <div class="info">
+                <h2>Coding Projects</h2>
+                <p>Coding projects that cover a wide variety of languages and disciplines.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=1" alt="CAD Projects">
+            <div class="info">
+                <h2>CAD Projects</h2>
+                <p>Projects modeled designed in CAD software.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
