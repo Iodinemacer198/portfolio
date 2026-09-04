@@ -65,11 +65,51 @@
             font-size: 14pt;
         }
 
+        .social-container {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            color: #333333;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1 style = "color: white; text-align: center; margin-top: 50px; font-size: 48px; margin-bottom:75px">Iodinemacer's Portfolio</h1>
+    <h1 style="color: white; text-align: center; margin-top: 50px; font-size: 48px; margin-bottom: 30px">Iodinemacer's Portfolio</h1>
+
+    <div class="social-container">
+        <a href="https://www.linkedin.com/in/tyler-molina-1a4b63429/" class="social-icon" aria-label="Linkedin">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Linkedin Icon">
+        </a>
+
+        <a href="https://www.instagram.com/tylermolina508/" target="_blank" class="social-icon instagram" aria-label="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Icon">
+        </a>
+
+        <a href="https://discord.com/users/1140696859107659937" target="_blank" class="social-icon discord" aria-label="Discord">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Discord_color_D.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Discord Icon">
+        </a>
+    </div>
 
     <div class="timeline">
         <div class="card">
