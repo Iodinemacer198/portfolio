@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Builds</title>
+    <style>
+        body, html { 
+            margin: 0; padding: 0;
+            width: 100%; height: 100%; min-height: 100vh;
+            background: linear-gradient(rgba(109, 109, 109, 0.4), rgba(45, 45, 45, 0.4));
+            background-size: cover; background-color: #000;
+            color: #fff; font-family: 'Verdana', sans-serif;
+            overflow-x: hidden; display: flex; flex-direction: column;
+        }
+
+        .timeline {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding: 25px;
+            background: rgba(80, 79, 79, 0.2);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            border: 1px solid rgba(68, 68, 68, 0.08);
+            box-shadow: 0 0 20px rgba(74, 74, 74, 0.2);
+            opacity: 1;
+        }
+
+        .card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .card img {
+            width: 260px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            color: #63b3ed;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            font-size: 18pt;
+        }
+
+        .info p {
+            line-height: 1.6;
+            color: #dddddd;
+            letter-spacing: 1px;
+            font-size: 12pt;
+        }
+
+        .a, a:link, a:visited, a:hover, a:active {
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 style="color: white; text-align: center; margin-top: 50px; font-size: 48px; margin-bottom: 10px">Engineering Builds</h1>
+    <h4 style="color: white; text-align: center"><a href="/index.html">Return home</a></h4>
+
+    <div class="timeline">
+        <div class="card">
+            <img src="/content/revolve.jpg" alt="Revolve Project">
+            <div class="info">
+                <h2>Revolve Project</h2>
+                <p>plaeholder</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
