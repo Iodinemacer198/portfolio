@@ -23,7 +23,7 @@
 
         .card {
             display: flex;
-            align-items: center;
+            align-items: center; /* Change to flex-start if you want images and text to align at the top */
             gap: 30px;
             margin-bottom: 40px;
             padding: 25px;
@@ -38,13 +38,20 @@
         .card:nth-child(even) {
             flex-direction: row-reverse;
         }
+        
+        /* New container to stack images vertically */
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-shrink: 0;
+        }
 
         .card img {
             width: 260px;
             height: 180px;
             object-fit: cover;
             border-radius: 8px;
-            flex-shrink: 0;
         }
 
         .info {
