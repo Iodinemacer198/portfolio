@@ -23,7 +23,7 @@
 
         .card {
             display: flex;
-            align-items: center;
+            align-items: center; /* Change to flex-start if you want images and text to align at the top */
             gap: 30px;
             margin-bottom: 40px;
             padding: 25px;
@@ -38,13 +38,20 @@
         .card:nth-child(even) {
             flex-direction: row-reverse;
         }
+        
+        /* New container to stack images vertically */
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            flex-shrink: 0;
+        }
 
         .card img {
             width: 260px;
             height: 180px;
             object-fit: cover;
             border-radius: 8px;
-            flex-shrink: 0;
         }
 
         .info {
@@ -78,7 +85,13 @@
 
     <div class="timeline">
         <div class="card">
-            <img src="/portfolio/content/revolve.jpg" alt="Revolve Project">
+            <!-- Wrap images in the image-column div -->
+            <div class="image-column">
+                <img src="/portfolio/content/revolve.jpg" alt="Revolve Project">
+                <!-- Add additional images here, and they will stack vertically -->
+                <!-- <img src="/portfolio/content/example2.jpg" alt="Second Image"> -->
+            </div>
+            
             <div class="info">
                 <h2>Revolve Project</h2>
                 <p>The revolving stage project started in the back half of my high school Engineering II class, in which we are to find an actual client or job within the school from which we are ot design and build the solution to. The initial plan for tackling the theatre's request for a revolving stage for their upcoming spring performance was to have only one 4-student group handle nearly the entire project, similar to how the class had been divided into projects every semester before.</p>
